@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                bgColor: '#E527B2',
+                iconColor: '#FFC107',
+                takaColor: 'rgba(17, 17, 17, 0.50)',
+                bgImageColor: 'rgba(17, 17, 17, 0.05)',
+              }
+            }
+          }
+        }
+      </script>
+    <title>Summer Sale</title>
+    <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2f83ae3cf6.js" crossorigin="anonymous"></script>
+    <style>
+        #fonts{
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+    
+</head>
+<body id="fonts">
+    <header class="mx-auto">
+        <div class="hero min-h-screen bg-[#F9F6E2]">
+            <div class="hero-content flex-col lg:flex-row-reverse gap-8">
+              <img src="./images/Summer 1.png" class="max-w-sm rounded-lg " />
+              <div class=" text-center">
+                <h1 class="font-medium md:text-3xl text-base">---SALE FEVER---</h1>
+                <p class="font-bold md:text-6xl mt-6 mb-20 text-3xl">Purchase TK 200 or <br>above & get <span class="text-bgColor">20% off</span></p>
+                <div class=" md:flex items-center gap-3 justify-center">
+                  <div>
+                    <p class="font-medium md:text-2xl text-base mb-4">Use Promo Code</p>
+                  </div>
+                  <div>
+                    <button class="py-3 px-6 rounded-xl bg-bgColor border-none text-white mb-6">SELL200</button>
+                  </div>
+                </div>
+                 
+                
+              </div>
+            </div>
+          </div>
+    </header>
+    <section class="bg-[#F8F8F8] pt-28 px-6 md:px-28  pb-48 flex flex-col md:flex-row ">
+        <div>
+            <div >
+                <h1 class="font-semibold text-4xl mb-10 text-center md:text-left">Kitchenware</h1>
+                <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    
+                    <div class="card  bg-base-100 shadow  ">
+                        <figure class="p-5">
+                          <img src="./images/prod1.png"  id="imageClick" alt="Shoes" class="rounded-xl bg-bgImageColor py-8 px-16 h-52 w-72" onclick="priceCountClick()" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <p class="text-iconColor"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+                          <h2 id="nam" class="font-semibold text-xl"  >K. Accessories</h2>
+                          <p  class="text-takaColor font-normal text-xl" ><span id="itemTaka">39.00</span> TK</p>
+                          
+                        </div>
+                      </div> 
+                    <div class="card  bg-base-100 shadow  ">
+                        <figure class="p-5">
+                          <img onclick="priceCountClick1()" src="./images/prod2.png" alt="Shoes" class="rounded-xl bg-bgImageColor py-8 px-16 h-52 w-72" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <p class="text-iconColor"><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+                          <h2 class="font-semibold text-xl">K. Accessories</h2>
+                          <p  class="text-takaColor font-normal text-xl"><span id="itemTaka1">25.00</span> TK</p>
+                          
+                        </div>
+                      </div> 
+                    <div class="card  bg-base-100 shadow ">
+                        <figure class="p-5">
+                          <img onclick="priceCountClick2()" src="./images/prod3.png" alt="Shoes" class="rounded-xl bg-bgImageColor py-8 px-16 h-52 w-72" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <p class="text-iconColor"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                          <h2 class="font-semibold text-xl">Home Cooker</h2>
+                          <p  class="text-takaColor font-normal text-xl"><span id="itemTaka2">49.00</span> TK</p>
+                          
+                        </div>
+                    </div> 
+                    
+                </div> 
+            </div>
+            <div>
+                <h1 class="font-semibold text-4xl mb-10 mt-14 text-center md:text-left">Sportswear</h1> 
+                <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                
+                    <div class="card  bg-base-100 shadow">
+                        <figure class="p-5">
+                          <img onclick="priceCountClick3()" src="./images/prod4.png" alt="Shoes" class="rounded-xl bg-bgImageColor py-8 px-16 h-52 w-72" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <p class="text-iconColor"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+                          <h2 class="font-semibold text-xl">Sports Back Cap</h2>
+                          <p  class="text-takaColor font-normal text-xl"><span id="itemTaka3">49.00</span> TK</p>
+                          
+                        </div>
+                      </div> 
+                    <div class="card  bg-base-100 shadow">
+                        <figure class="p-5">
+                          <img 
+                         onclick="priceCountClick4()" src="./images/prod5.png" alt="Shoes" class="rounded-xl bg-bgImageColor py-8 px-16 h-52 w-72" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <p class="text-iconColor"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+                          <h2 class="font-semibold text-xl">Full Jersey Set</h2>
+                          <p  class="text-takaColor font-normal text-xl"><span id="itemTaka4">69.00</span> TK</p>
+                          
+                        </div>
+                      </div> 
+                    <div class="card  bg-base-100 shadow">
+                        <figure class="p-5">
+                          <img onclick="priceCountClick5()"  src="./images/prod6.png" alt="Shoes" class="rounded-xl bg-bgImageColor py-8 px-16 h-52 w-72" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <p class="text-iconColor"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+                          <h2 class="font-semibold text-xl">Sports cates</h2>
+                          <p  class="text-takaColor font-normal text-xl"><span id="itemTaka5">169.00</span> TK</p>
+                          
+                        </div>
+                      </div> 
+                </div>
+            </div>
+            <div>
+                <h1 class="font-semibold text-4xl mt-14 mb-10 text-center md:text-left">Furniture</h1> 
+                <div class="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                
+                    <div class="card  bg-base-100 shadow">
+                        <figure class="p-5">
+                          <img onclick="priceCountClick6()" src="./images/prod7.png" alt="Shoes" class="rounded-xl bg-bgImageColor py-8 px-16 h-52 w-72" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <p class="text-iconColor"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+                          <h2 class="font-semibold text-xl">Single Relax Chair</h2>
+                          <p  class="text-takaColor font-normal text-xl"><span id="itemTaka6">185.00</span> TK</p>
+                          
+                        </div>
+                      </div> 
+                    <div class="card  bg-base-100 shadow">
+                        <figure class="p-5">
+                          <img onclick="priceCountClick7()" src="./images/prod8.png" alt="Shoes" class="rounded-xl bg-bgImageColor py-8 px-16 h-52 w-72" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <p class="text-iconColor"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                          <h2 class="font-semibold text-xl">Children play</h2>
+                          <p  class="text-takaColor font-normal text-xl"><span id="itemTaka7">299.00</span> TK</p>
+                          
+                        </div>
+                      </div> 
+                    <div class="card  bg-base-100 shadow">
+                        <figure class="p-5">
+                          <img onclick="priceCountClick8()" src="./images/prod9.png" alt="Shoes" class="rounded-xl bg-bgImageColor py-8 px-16 h-52 w-72" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <p class="text-iconColor"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                          <h2 class="font-semibold text-xl">Flexible Sofa</h2>
+                          <p  class="text-takaColor font-normal text-xl"><span id="itemTaka8">339.00</span> TK</p>
+                          
+                        </div>
+                      </div> 
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 w-80 md:ml-6">
+            <div class="mx-auto">
+                
+                <div class="card  bg-base-100 shadow mt-20 ">
+                    <div class=" p-5 ">
+                      <h2 class="font-medium text-2xl mb-3">Have coupon?</h2>
+                    
+                      <label class="input-group w-46">
+                        <input id="input" type="text" placeholder="Coupon code" class="input border-2 border-bgImageColor w-36 " />
+                        <span id="applyButton" disabled class="bg-bgColor text-white font-semibold text-base ">Apply</span>
+                      </label>
+                      
+                      
+                    </div>
+                </div>
+                <div class="card  bg-base-100 shadow mt-6">
+                    <div id="itemList" class="p-5">
+                        
+                    </div>
+                    <hr class="mx-5">
+                    <div id="div" class="p-5">
+                        <P class="font-medium text-base">Total price : <span id="previousTaka" class="font-medium text-base text-takaColor">00.00 </span><span class="font-medium text-base text-takaColor"> TK</span> </P>
+                        <p class="font-medium text-base">Discount : <span id="discount" class="font-medium text-base text-takaColor">00.00</span> <span class="font-medium text-base text-takaColor">TK</span> </p>
+                        <p class="font-medium text-base">Total : <span id="total" class="font-medium text-base text-takaColor">00.00</span> <span class="font-medium text-base  text-takaColor">TK</span></p>
+                    </div>
+                    <hr class="mx-5">
+                    <div class="pt-5 -mb-6 mx-auto">
+                        <button id="makePurchase" disabled class="py-3 px-6  font-semibold text-lg rounded-xl bg-bgColor border-none text-white "onclick="my_modal_1.showModal()" >Make Purchase</button>
+                        <dialog id="my_modal_1" class="modal ">
+                          <form method="dialog" class="modal-box ">
+                            <img src="./images/congo.png" alt="" srcset="" class="mx-auto mt-7 mb-7">
+                            <p class="py-4 font-bold text-5xl text-center ">Congratulations</p>
+                            <p class="font-normal text-xl text-center">Your Purchase the product</p>
+                            <div class=" text-center mt-7 mb-14">
+                            
+                            <button id="goHome"  class="py-3 px-6 rounded-xl bg-bgColor border-none text-white font-semibold text-lg">Go Home</button>
+                            </div>
+                          </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+            
+        
+        </div>
+        
+        
+    </section>
+
+    <script src="./connetion.js"></script>
+</body>
+</html>
